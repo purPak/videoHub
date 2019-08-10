@@ -78,6 +78,19 @@ class User implements UserInterface
 
         return $this;
     }
+/*
+    private function getBirthday()
+    {
+        return $this->birthday;
+    }
+
+    private function setBirthday($birthday)
+    {
+        $this->birthday = $birthday;
+
+        return $this;
+    }
+*/
 
     /**
      * @see UserInterface
