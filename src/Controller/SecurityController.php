@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\RegisterUserFormType;
+use Psr\Log\LoggerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -39,9 +40,9 @@ class SecurityController extends AbstractController
     }
 
     /**
-     * @Route("/register", name="register")
+     * @Route("/register", name="app_register")
      */
-    public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder)
+    public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder, LoggerInterface $logger)
     {
         $user = new User();
         $form = $this->createForm(RegisterUserFormType::class, $user);
@@ -54,8 +55,9 @@ class SecurityController extends AbstractController
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($user);
             $entityManager->flush();
-
-            return $this->redirectToRoute('home');
+            $this->addFlash('success', 'Your account has been created. You can now login.');
+            $logger->info(sprintf('User registered: %s', $user->getEmail()));
+            return $this->redirectToRoute('app_login');
         }
 
         return $this->render('security/register.html.twig',

@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
@@ -18,7 +19,12 @@ class User implements UserInterface
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=180, unique=true)
+     * @Assert\Email(
+     *     message = "The email '{{ value }}' is not a valid email.",
+     *     checkMX = true
+     * )
+     * @Assert\NotBlank()
+     * @ORM\Column(type="string", length=180, unique=true, nullable=false)
      */
     private $email;
 
@@ -28,8 +34,32 @@ class User implements UserInterface
     private $roles = [];
 
     /**
+     * @ORM\Column(type="string", length=180, nullable=true)
+     */
+    private $firstname;
+
+    /**
+     * @ORM\Column(type="string", length=180, nullable=true)
+     */
+    private $lastname;
+
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private $newsletter;
+
+    /**
+     * @Assert\Date
+     * @var string A "Y-m-d" formatted value)
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $birthday;
+
+
+    /**
+     * @Assert\NotBlank()
      * @var string The hashed password
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", nullable=false)
      */
     private $password;
 
@@ -48,6 +78,10 @@ class User implements UserInterface
         $this->email = $email;
 
         return $this;
+    }
+
+    public function __construct(){
+        $this->roles = array('ROLE_USER');
     }
 
     /**
@@ -78,19 +112,54 @@ class User implements UserInterface
 
         return $this;
     }
-/*
-    private function getBirthday()
+
+    public function getFirstname(): ?string
     {
-        return $this->birthday;
+        return $this->firstname;
     }
 
-    private function setBirthday($birthday)
+    public function setFirstname(string $firstname): self
+    {
+        $this->firstname = $firstname;
+
+        return $this;
+    }
+
+    public function getLastname(): ?string
+    {
+        return $this->firstname;
+    }
+
+    public function setLastname(string $lastname): self
+    {
+        $this->lastname = $lastname;
+
+        return $this;
+    }
+
+    public function getBirthday()
+    {
+        return $this->birthday ;
+    }
+
+    public function setBirthday($birthday)
     {
         $this->birthday = $birthday;
 
         return $this;
     }
-*/
+
+    public function getNewsletter()
+    {
+        return $this->newsletter ;
+    }
+
+    public function setNewsletter($newsletter)
+    {
+        $this->newsletter = $newsletter;
+
+        return $this;
+    }
 
     /**
      * @see UserInterface

@@ -4,4 +4,11 @@
 
 {% block body %}
 hello
+    {% block flash %}
+        {% for flash_message in app.session.flashbag.get('success') %}
+            <div class="container alert alert-success" role="alert">
+                {{ flash_message }}
+            </div>
+        {% endfor %}
+    {% endblock %}
 {% endblock %}
