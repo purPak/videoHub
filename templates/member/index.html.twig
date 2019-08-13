@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MemberController!{% endblock %}
+
+{% block body %}
+    {% block flash %}
+        {% for flash_message in app.session.flashbag.get('success') %}
+            {{ flash_message }}
+        {% endfor %}
+    {% endblock %}
+    {% if app.user %}
+        <ul>
+            <li>{{ app.user.username }}</li>
+            <li>{{ app.user.firstname }}</li>
+            <li>{{ app.user.lastname }}</li>
+            <button><a href = {{ path('app_member_edit', {id: app.user.id}) }}>Edit profile</a></button>
+            <button><a href = {{ path('app_member_delete', {id: app.user.id}) }}>Delete profile</a></button>
+        </ul>
+    {% endif %}
+{% endblock %}

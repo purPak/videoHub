@@ -57,7 +57,7 @@ class SecurityController extends AbstractController
             $entityManager->flush();
             $this->addFlash('success', 'Your account has been created. You can now login.');
             $logger->info(sprintf('User registered: %s', $user->getEmail()));
-            return $this->redirectToRoute('app_login');
+            return $this->redirectToRoute('app_login' );
         }
 
         return $this->render('security/register.html.twig',

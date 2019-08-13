@@ -55,7 +55,6 @@ class User implements UserInterface
      */
     private $birthday;
 
-
     /**
      * @Assert\NotBlank()
      * @var string The hashed password
@@ -127,7 +126,7 @@ class User implements UserInterface
 
     public function getLastname(): ?string
     {
-        return $this->firstname;
+        return $this->lastname;
     }
 
     public function setLastname(string $lastname): self

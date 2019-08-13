@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello VideoController!{% endblock %}
+
+{% block body %}
+    {{ form_start(form) }}
+    {{ form_row(form.title) }}
+    {{ form_row(form.description) }}
+    {{ form_row(form.createdAt) }}
+    {{ form_row(form.published) }}
+    {{ form_row(form.url) }}
+
+    {% for tag in form.category %}
+        {{ form_row(tag.name) }}
+    {% endfor %}
+
+    {{ form_row(form.submit) }}
+    {{ form_end(form)}}
+{% endblock %}

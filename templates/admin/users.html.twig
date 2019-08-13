@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+{% if app.user %}
+<li><a href="{{ path('app_member') }}">Member Section</a></li>
+{% endif %}
+{% for u in user %}
+
+<ul>
+    <li>{{ u.firstname}} {{ u.lastname}} <button><a href ={{ path('admin_user_delete', {id: u.id}) }}>edit</a></button>
+        <button>
+            <a href ={{ path('admin_user_delete', {id: u.id}) }}>delete</a>
+        </button>
+    </li>
+</ul>
+
+{% endfor %}
+
+{% endblock %}

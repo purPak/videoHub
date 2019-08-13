@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+    {% for c in category %}
+        <ul>
+            <li>{{ c.name}}</li>
+            <li>
+                <button>
+                    <a href ={{ path('admin_user_delete', {id: c.id}) }}>edit</a>
+                </button>
+                <button>
+                    <a href ={{ path('admin_category_delete', {id: c.id}) }}>delete</a>
+                </button>
+            </li>
+        </ul>
+    {% endfor %}
+
+{% endblock %}

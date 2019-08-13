@@ -1,6 +1,21 @@
 <nav>
     <ul>
+        <li><a href = "{{ path('/') }}">Home</a></li>
         <li><a href = "{{ path('app_login') }}">Login</a></li>
         <li><a href = "{{ path('app_register') }}">Sign in</a></li>
+        {% if is_granted('ROLE_USER') %}
+        <li><a href="{{ path('app_logout') }}">Logout</a></li>
+        {% endif %}
+    </ul>
+
+    <ul>
+        {% if is_granted('ROLE_ADMIN') %}
+            <li><a href="{{ path('app_admin') }}">Admin Section</a></li>
+            You log as Admin of VideoHub
+        {% elseif is_granted('ROLE_USER') %}
+            <li><a href="{{ path('app_member') }}">Member Section</a>You are log as app.user.email</li>
+        {% else %}
+            Anonymous
+        {% endif %}
     </ul>
 </nav>

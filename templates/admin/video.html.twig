@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+    {% if app.user %}
+        <li><a href="{{ path('app_member') }}">Member Section</a></li>
+    {% endif %}
+    {% for v in video %}
+
+        <ul>
+            <div>
+                <li>{{ v.title}}</li>
+                <li>{{ v.description}}</li>
+                <li>{{ v.createdAt | date("m/d/Y") }} </li>
+                <li>{{ v.description}}</li>
+                <li>{{ v.url}}</li>
+                <li>
+                    <button>
+                        <a href ={{ path('admin_user_delete', {id: v.id}) }}>edit</a>
+                    </button>
+                    <button>
+                        <a href ={{ path('admin_user_delete', {id: v.id}) }}>delete</a>
+                    </button>
+                </li>
+
+                </li>
+            </div>
+        </ul>
+
+    {% endfor %}
+
+{% endblock %}

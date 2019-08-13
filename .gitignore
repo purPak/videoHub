@@ -18,3 +18,5 @@
 /.web-server-pid
 ###< symfony/web-server-bundle ###
 /vendor
+.env.test
+phpunit.xml.dist

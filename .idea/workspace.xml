@@ -1,37 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/templates/member/edit.html.twig" description="{{ form_row(form.email) }}&#10;        {{ form_row(for..." line="13" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="24ab9826-e523-46b6-9b88-f213bd58b847" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190810165912.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190810172634.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190810172752.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190810173127.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190810173606.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190810180102.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190810180249.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190810180348.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190810180434.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190810180657.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190810180813.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190810183622.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/partials/navbar.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/mysql/binlog.000003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/mysql/video_hub/category.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/mysql/video_hub/video.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/mysql/video_hub/video_category.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/mysql/video_hub/video_user.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/MemberController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/VideoController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Video.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/CategoryFormType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/VideoFormType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190811205359.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/CategoryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/VideoRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/category.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/editCategory.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/users.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/video.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/member/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/member/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/video/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_1.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_1.ibt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_10.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_10.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_2.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_2.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_3.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_3.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_4.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_4.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_5.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_5.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_6.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_6.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_7.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_7.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_8.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_8.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_9.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/#innodb_temp/temp_9.ibt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/binlog.000002" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/binlog.000002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/binlog.index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/ibtmp1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/mysql.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/undo_001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/undo_002" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/video_hub/migration_versions.ibd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/video_hub/user.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/video_hub/user.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RegisterUserFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegisterUserFormType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/partials/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/navbar.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/register.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,36 +64,70 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/MemberController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+            <state relative-caret-position="442">
+              <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
               <folding>
-                <element signature="e#30#62#0#PHP" expanded="true" />
+                <element signature="e#34#54#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/home/index.html.twig">
+        <entry file="file://$PROJECT_DIR$/.env.test">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/admin/category.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="300">
+              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/AdminController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="163" column="1" selection-start-line="163" selection-start-column="1" selection-end-line="163" selection-end-column="1" />
+              <folding>
+                <element signature="e#34#58#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>pass</find>
+      <find>form</find>
+      <find>login</find>
+      <find>see</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,21 +136,43 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/config/packages/doctrine.yaml" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/config/packages/security.yaml" />
-        <option value="$PROJECT_DIR$/src/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
-        <option value="$PROJECT_DIR$/templates/partials/navbar.html.twig" />
         <option value="$PROJECT_DIR$/templates/security/register.html.twig" />
-        <option value="$PROJECT_DIR$/templates/security/login.html.twig" />
         <option value="$PROJECT_DIR$/src/Form/RegisterUserFormType.php" />
+        <option value="$PROJECT_DIR$/templates/security/login.html.twig" />
+        <option value="$PROJECT_DIR$/src/Form/EditUserRegisterType.php" />
         <option value="$PROJECT_DIR$/src/Controller/SecurityController.php" />
-        <option value="$PROJECT_DIR$/templates/home/index.html.twig" />
+        <option value="$PROJECT_DIR$/templates/member/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/HomeController.php" />
+        <option value="$PROJECT_DIR$/config/packages/security.yaml" />
+        <option value="$PROJECT_DIR$/src/Controller/MemberController.php" />
+        <option value="$PROJECT_DIR$/templates/video/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Entity/Category.php" />
+        <option value="$PROJECT_DIR$/src/Repository/CategoryRepository.php" />
         <option value="$PROJECT_DIR$/src/Entity/User.php" />
+        <option value="$PROJECT_DIR$/templates/admin/users.index.html" />
+        <option value="$PROJECT_DIR$/templates/admin/users..html.twig" />
+        <option value="$PROJECT_DIR$/templates/admin/createUser.html.twig" />
+        <option value="$PROJECT_DIR$/templates/admin/editCategory.html.twig" />
+        <option value="$PROJECT_DIR$/src/Form/CategoryFormType.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Video.php" />
+        <option value="$PROJECT_DIR$/src/Form/VideoFormType.php" />
+        <option value="$PROJECT_DIR$/src/Repository/VideoRepository.php" />
+        <option value="$PROJECT_DIR$/src/Repository/UserRepository.php" />
+        <option value="$PROJECT_DIR$/templates/home/index.html.twig" />
+        <option value="$PROJECT_DIR$/templates/member/index.html.twig" />
+        <option value="$PROJECT_DIR$/templates/admin/index.html.twig" />
+        <option value="$PROJECT_DIR$/templates/admin/users.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/VideoController.php" />
+        <option value="$PROJECT_DIR$/templates/admin/video.html.twig" />
+        <option value="$PROJECT_DIR$/templates/partials/navbar.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/AdminController.php" />
+        <option value="$PROJECT_DIR$/templates/admin/category.html.twig" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -222,45 +303,6 @@
               <item name="videoHub" type="b2602c69:ProjectViewProjectNode" />
               <item name="videoHub" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="videoHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="videoHub" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="videoHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="videoHub" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="videoHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="videoHub" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="videoHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="videoHub" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="videoHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="videoHub" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="videoHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="videoHub" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="videoHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="videoHub" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -298,12 +340,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565434463291</updated>
-      <workItem from="1565434464827" duration="22537000" />
+      <workItem from="1565434464827" duration="35038000" />
+      <workItem from="1565546410031" duration="42180000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22537000" />
+    <option name="totallyTimeSpent" value="77218000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -318,25 +361,25 @@
     <frame x="0" y="23" width="1280" height="752" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3287879" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3287879" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22132471" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.20454545" />
+      <window_info anchor="bottom" id="Database Changes" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.3287879" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" weight="0.3287879" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,26 +393,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitingnore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitingnore" />
     <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-189" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.test">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/services.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/doctrine_migrations.yaml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -419,69 +447,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/partials/navbar.html.twig">
+    <entry file="file://$PROJECT_DIR$/config/services.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+        <state relative-caret-position="-17" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/form/AbstractType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/security/register.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Form/EditUserRegisterType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        <state relative-caret-position="240">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/security/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="56" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
+        <state relative-caret-position="299">
+          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/UserRepository.php">
+    <entry file="file://$PROJECT_DIR$/templates/video/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/CategoryRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-130">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        <state relative-caret-position="361">
+          <caret line="39" column="47" lean-forward="true" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php">
+    <entry file="file://$PROJECT_DIR$/templates/member/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        <state relative-caret-position="225">
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Form/RegisterUserFormType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        <state relative-caret-position="330">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
           <folding>
             <element signature="e#28#48#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/SecurityController.php">
+    <entry file="file://$PROJECT_DIR$/templates/admin/createUser.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="46" column="27" lean-forward="true" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
-          <folding>
-            <element signature="e#34#54#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/templates/security/register.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/CategoryFormType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/editCategory.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
@@ -490,11 +548,154 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+        <state relative-caret-position="902">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
           <folding>
             <element signature="e#30#62#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="38" column="49" lean-forward="true" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/VideoRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/member/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/SecurityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="65" column="5" selection-start-line="41" selection-start-column="4" selection-end-line="65" selection-end-column="5" />
+          <folding>
+            <element signature="e#34#54#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#34#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/VideoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#35#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/users.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/VideoFormType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding>
+            <element signature="e#28#52#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/partials/navbar.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="830">
+          <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
+          <folding>
+            <element signature="e#30#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/video.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="28" column="18" lean-forward="true" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/category.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/MemberController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+          <folding>
+            <element signature="e#34#54#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.test">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="163" column="1" selection-start-line="163" selection-start-column="1" selection-end-line="163" selection-end-column="1" />
+          <folding>
+            <element signature="e#34#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
         </state>
       </provider>
     </entry>

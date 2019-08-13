@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdminController!{% endblock %}
+
+{% block body %}
+    <ul>
+        <li><button><a href="{{ path('admin_users') }}">See all users</a></button></li>
+        <li><button><a href="{{ path('admin_user_create') }}">Add user</a></button></li>
+        <li><button><a href="{{ path('admin_categories') }}">See All Categories</a></button></li>
+        <li><button><a href="{{ path('admin_category_create') }}">Add Category</a></button></li>
+        <li><button><a href="{{ path('app_video') }}">Add Video</a></button></li>
+    </ul>
+{% endblock %}

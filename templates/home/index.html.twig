@@ -3,12 +3,27 @@
 {% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
-hello
-    {% block flash %}
-        {% for flash_message in app.session.flashbag.get('success') %}
-            <div class="container alert alert-success" role="alert">
-                {{ flash_message }}
+
+    {% if is_granted('ROLE_ADMIN') %}
+        <li><a href="{{ path('app_admin') }}">Admin Section</a></li>
+        You log as Admin of VideoHub
+    {% elseif is_granted('ROLE_USER') %}
+        <li><a href="{{ path('app_member') }}">Member Section</a>You are log as app.user.email</li>
+    {% else %}
+        Anonymous
+    {% endif %}
+
+    {% for v in video %}
+        {% if v.published %}
+            <div>
+                <ul>
+                    <li>{{ v.title }}</li>
+                    <li>{{ v.description }}</li>
+                    <li>{{ v.createdAt | date("m/d/Y") }}</li>
+                    <iframe width=\"560\" height=\"315\" src="{{ v.url }}"></iframe>
+                </ul>
             </div>
-        {% endfor %}
-    {% endblock %}
+        {% endif %}
+    {% endfor %}
+
 {% endblock %}
